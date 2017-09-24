@@ -22,7 +22,8 @@ html {
 }
 
 .button {
-  display: inline-block;
+  // display: inline-block;
+  display: none;
   border-radius: 4px;
   text-decoration: none;
   padding: 10px 30px;

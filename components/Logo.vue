@@ -43,7 +43,7 @@
 .Triangle--five {
   top: 190px;
   left: 60px;
-  animation: goup 0.5s linear forwards 3s;
+  animation: goup 0.5s linear forwards 3.4s;
   background-image: url('~/assets/flstudio.png');
   height: 80px;
   width: 80px;
