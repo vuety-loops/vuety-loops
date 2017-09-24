@@ -21,9 +21,9 @@ $ npm run generate
 
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
 
-## 100 days of code
+# 100 days of code
 
-# Day One
+## Day One
 
 - Setup GIT organization/repository
 - Initialize new Nuxt.js project
