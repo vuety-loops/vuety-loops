@@ -1,9 +1,8 @@
 <template>
   <div class="VueToNuxtLogo">
-    <div class="Triangle Triangle--two"></div>
     <div class="Triangle Triangle--one"></div>
     <div class="Triangle Triangle--three"></div>
-    <div class="Triangle Triangle--four"></div>
+    <div class="Triangle Triangle--five"></div>
   </div>
 </template>
 
@@ -15,7 +14,7 @@
   position: relative;
   overflow: hidden;
   height: 180px;
-  width: 245px;
+  width: 200px;
 }
 
 .Triangle {
@@ -27,41 +26,40 @@
 }
 
 .Triangle--one {
-  border-left: 105px solid transparent;
-  border-right: 105px solid transparent;
-  border-bottom: 180px solid #41B883;
-}
-
-.Triangle--two {
-  top: 30px;
-  left: 35px;
-  animation: goright 0.5s linear forwards 3.5s;
-  border-left: 87.5px solid transparent;
-  border-right: 87.5px solid transparent;
-  border-bottom: 150px solid #3B8070;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 170px solid #FEFC19;
 }
 
 .Triangle--three {
-  top: 60px;
-  left: 35px;
-  animation: goright 0.5s linear forwards 3.5s;
-  border-left: 70px solid transparent;
-  border-right: 70px solid transparent;
-  border-bottom: 120px solid #35495E;
+  top: 70px;
+  left: 40px;
+  animation: godown 0.5s linear forwards 3s;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 100px solid #FFB031;
 }
 
-.Triangle--four {
-  top: 120px;
-  left: 70px;
-  animation: godown 0.5s linear forwards 3s;
-  border-left: 35px solid transparent;
-  border-right: 35px solid transparent;
-  border-bottom: 60px solid #fff;
+.Triangle--five {
+  top: 190px;
+  left: 60px;
+  animation: goup 0.5s linear forwards 3s;
+  background-image: url('~/assets/flstudio.png');
+  height: 80px;
+  width: 80px;
+  background-size: contain;
+  background-position: center;
 }
 
 @keyframes turn {
   100% {
     transform: rotateX(0deg);
+  }
+}
+
+@keyframes goup {
+  100% {
+    top: 70px;
   }
 }
 
