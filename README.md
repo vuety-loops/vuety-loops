@@ -1,4 +1,4 @@
-# vuety-loops
+# Vuety Loops
 
 > A browser-based DAW using Nuxt.js
 
@@ -20,3 +20,13 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+
+## 100 days of code
+
+# Day One
+
+- Setup GIT organization/repository
+- Initialize new Nuxt.js project
+- Modify existing Nuxt.js logo to fit with the current project
+- Add background to welcome page
+- Update welcome elements to fit with dark background
