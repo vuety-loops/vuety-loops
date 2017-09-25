@@ -9,9 +9,9 @@
         A browser-based DAW using Nuxt.js
       </h2>
       <div class="links">
-        <router-link :to="{ name: 'drums' }" class="button light-orange">Drums</router-link>
+        <router-link :to="{ name: 'drums' }" class="button hidden light-orange">Drums</router-link>
         <a href="https://github.com/vuety-loops/vuety-loops" target="_blank" class="button filled light-orange">GitHub</a>
-        <router-link :to="{ name: 'synth' }" class="button light-orange">Synth</router-link>
+        <router-link :to="{ name: 'synth' }" class="button hidden light-orange">Synth</router-link>
       </div>
     </div>
   </section>
