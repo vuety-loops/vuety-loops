@@ -5,11 +5,18 @@
     {{ node.id }}
     {{ array }}
     {{ index }}
+    <input type="checkbox" v-for="n in length" :value="n" :id="n" name="pattern" v-model="pattern" />
   </div>
 </template>
 <script>
+  import { mapState } from 'vuex'
   export default {
     name: 'drum-sample',
+    data () {
+      return {
+        pattern: []
+      }
+    },
     props: {
       node: {
         type: Object,
@@ -23,6 +30,11 @@
         type: Number,
         default: () => 0
       }
+    },
+    computed: {
+      ...mapState({
+        length: state => state.drums.state.length
+      })
     },
     methods: {
       removeNode () {

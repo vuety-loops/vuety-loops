@@ -19,7 +19,8 @@ export const actions = {
 export const mutations = {
   addNode (state) {
     state.nodes.push({
-      id: state.state.nextId
+      id: state.state.nextId,
+      pattern: []
     })
     state.state.nextId++
   },
