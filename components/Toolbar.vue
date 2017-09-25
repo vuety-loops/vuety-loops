@@ -29,6 +29,8 @@
   </nav>
 </template>
 <script>
+  // import $ from '~/utils/NodeList.js'
+  /* eslint no-unused-vars: "off" */
   export default {
     name: 'toolbar',
     data () {
@@ -59,6 +61,10 @@
     },
     mounted () {
       this._navbar = true
+      if (process.browser) {
+        console.log('Browser Process')
+      }
+      console.log(process)
     },
     computed: {
       slots () {

@@ -21,6 +21,12 @@ module.exports = {
   /*
   ** Build configuration
   */
+  modules: [
+    '@nuxtjs/bootstrap-vue',
+
+    // Or if you have custom bootstrap CSS...
+    // ['@nuxtjs/bootstrap-vue', { css: false }],
+  ],
   build: {
     /*
     ** Run ESLint on save

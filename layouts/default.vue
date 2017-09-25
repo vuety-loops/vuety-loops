@@ -1,6 +1,6 @@
 <template>
   <div>
-    <toolbar placement="static" type="default" fluid>
+    <toolbar placement="static" type="default">
       <!-- Brand as slot -->
       <router-link :to="{ name: 'index' }" title="Home" slot="brand" class="navbar-brand">Vuety Loops</router-link>
       <slot>
