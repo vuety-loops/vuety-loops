@@ -30,3 +30,9 @@ For detailed explanation on how things work, checkout the [Nuxt.js docs](https:/
 - Modify existing Nuxt.js logo to fit with the current project
 - Add background to welcome page
 - Update welcome elements to fit with dark background
+
+## Day Two
+
+- Create empty drum machine page
+- Create empty synth page
+- Create knob component based off agektmr/webaudio-knob
