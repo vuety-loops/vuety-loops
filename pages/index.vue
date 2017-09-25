@@ -9,7 +9,7 @@
         A browser-based DAW using Nuxt.js
       </h2>
       <div class="links">
-        <router-link :to="{ name: 'drums' }" class="button light-orange">Drums</router-link>
+        <router-link :to="{ name: 'drums' }" class="button hidden light-orange">Drums</router-link>
         <a href="https://nuxtjs.org/" target="_blank" class="button hidden light-orange">Documentation</a>
         <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button hidden dark-orange">GitHub</a>
       </div>
