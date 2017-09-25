@@ -55,8 +55,6 @@
     data () {
       return {
         value: this.$props.params && this.$props.params.value ? this.$props.params.value : 0,
-        min: 0,
-        max: 127,
         opacity: 0,
         diameter: 64,
         step: 3,
@@ -73,6 +71,14 @@
       params: {
         type: Object,
         default: () => {}
+      },
+      min: {
+        type: [String, Number],
+        default: () => 0
+      },
+      max: {
+        type: [String, Number],
+        default: () => 100
       }
     },
     computed: {

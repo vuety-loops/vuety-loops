@@ -1,29 +1,17 @@
 <template>
-  <div id="drum-machine">
-    <h1>Drum Machine</h1>
+  <div id="drum-machine-page">
+    <h1>Drums</h1>
     <button class="start">Start</button>
-    <vl-knob :params="volume_params"></vl-knob>
-    <vl-knob :params="volume_params"></vl-knob>
-    <vl-knob :params="volume_params"></vl-knob>
-    <vl-knob :params="volume_params"></vl-knob>
-    <vl-knob :params="volume_params"></vl-knob>
-    <vl-knob :params="volume_params"></vl-knob>
-    <vl-knob :params="volume_params"></vl-knob>
-    <vl-knob :params="volume_params"></vl-knob>
-    <vl-knob :params="volume_params"></vl-knob>
-    <vl-knob :params="volume_params"></vl-knob>
-    <vl-knob :params="volume_params"></vl-knob>
-    <vl-knob :params="volume_params"></vl-knob>
-    <vl-knob :params="volume_params"></vl-knob>
-    <vl-knob :params="volume_params"></vl-knob>
-    <vl-knob :params="volume_params"></vl-knob>
+    <drum-machine></drum-machine>
   </div>
 </template>
 <script>
   import VlKnob from '~/components/vl/knob/Knob.vue'
+  const DrumMachine = () => import('~/components/vl/drums/DrumMachine.vue')
   export default {
-    name: 'drum-machine',
+    name: 'drums',
     components: {
+      DrumMachine,
       VlKnob
     },
     data () {
@@ -59,11 +47,6 @@
       //     startOsc.innerHTML = 'Stop'
       //   }
       // }
-    },
-    methods: {
-      start () {
-
-      }
     }
   }
 </script>
