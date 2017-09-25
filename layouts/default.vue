@@ -8,8 +8,9 @@
         <router-link :to="{ name: 'synth' }" tag="li"><a href="#">Synth</a></router-link>
       </slot>
     </toolbar>
-
-    <nuxt/>
+    <div class="container-fluid">
+      <nuxt/>
+    </div>
   </div>
 </template>
 <script>

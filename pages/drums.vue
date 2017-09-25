@@ -7,6 +7,7 @@
 </template>
 <script>
   import VlKnob from '~/components/vl/knob/Knob.vue'
+  import { mapState } from 'vuex'
   const DrumMachine = () => import('~/components/vl/drums/DrumMachine.vue')
   export default {
     name: 'drums',
@@ -20,6 +21,11 @@
           label: 'Volume'
         }
       }
+    },
+    computed: {
+      ...mapState({
+        nodes: state => state.drums.nodes
+      })
     },
     mounted () {
       /* eslint new-parens: "off" */
