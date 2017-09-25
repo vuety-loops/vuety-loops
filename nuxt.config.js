@@ -1,9 +1,10 @@
 module.exports = {
+  vendor: ['babel-polyfill'],
   /*
   ** Headers of the page
   */
   head: {
-    title: 'vuety-loops',
+    title: 'Vuety Loops',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

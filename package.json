@@ -13,8 +13,18 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@nuxtjs/bootstrap-vue": "^2.0.2",
+    "babel-polyfill": "^6.26.0",
+    "bootstrap": "^3.3.7",
+    "font-loader": "^0.1.2",
+    "jquery": "^3.2.1",
+    "lodash": "^4.17.4",
+    "lodash.startcase": "^4.4.0",
     "nuxt": "^1.0.0-rc11",
-    "web-audio-api": "^0.2.2"
+    "popper.js": "^1.12.5",
+    "style-loader": "^0.18.2",
+    "vue-functional-data-merge": "^1.0.6",
+    "vue-strap": "^1.1.37"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",

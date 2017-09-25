@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <section class="container-fluid home">
     <div>
       <logo/>
       <h1 class="title">
@@ -9,9 +9,9 @@
         A browser-based DAW using Nuxt.js
       </h2>
       <div class="links">
-        <router-link :to="{ name: 'drums' }" class="button hidden light-orange">Drums</router-link>
-        <a href="https://nuxtjs.org/" target="_blank" class="button hidden light-orange">Documentation</a>
-        <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button hidden dark-orange">GitHub</a>
+        <router-link :to="{ name: 'drums' }" class="button light-orange">Drums</router-link>
+        <a href="https://github.com/vuety-loops/vuety-loops" target="_blank" class="button filled light-orange">GitHub</a>
+        <router-link :to="{ name: 'synth' }" class="button light-orange">Synth</router-link>
       </div>
     </div>
   </section>
@@ -21,6 +21,7 @@
 import Logo from '~/components/Logo.vue'
 
 export default {
+  layout: 'home',
   components: {
     Logo
   }
@@ -31,8 +32,9 @@ export default {
 .hidden {
   display: none !important;
 }
-.container {
-  min-height: 100vh;
+.home {
+  min-height: calc(100vh - 0px);
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;

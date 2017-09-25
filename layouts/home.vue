@@ -1,14 +1,5 @@
 <template>
   <div>
-    <toolbar placement="static" type="default" fluid>
-      <!-- Brand as slot -->
-      <router-link :to="{ name: 'index' }" title="Home" slot="brand" class="navbar-brand">Vuety Loops</router-link>
-      <slot>
-        <router-link :to="{ name: 'drums' }" tag="li"><a href="#">Drums</a></router-link>
-        <router-link :to="{ name: 'synth' }" tag="li"><a href="#">Synth</a></router-link>
-      </slot>
-    </toolbar>
-
     <nuxt/>
   </div>
 </template>
