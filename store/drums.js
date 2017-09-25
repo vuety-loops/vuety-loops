@@ -4,7 +4,8 @@ export const state = () => ({
     tempo: 128,
     currentVoice: 0,
     currentPattern: 0,
-    length: 16
+    length: 16,
+    nextId: 0
   },
   nodes: []
 })
@@ -16,10 +17,15 @@ export const actions = {
 }
 
 export const mutations = {
-  addNode (state, node) {
-    console.log(node)
+  addNode (state) {
     state.nodes.push({
-      id: node.id
+      id: state.state.nextId
     })
+    state.state.nextId++
+  },
+  removeNode (state, key) {
+    for (var i = 0; i < state.nodes.length; i++) {
+      if (state.nodes[i].id === key) state.nodes.splice(i, 1)
+    }
   }
 }

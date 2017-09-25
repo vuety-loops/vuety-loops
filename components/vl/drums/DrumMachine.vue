@@ -4,7 +4,7 @@
     <p>This is a drum machine.</p>
     <div id="sample-rack">
     <button class="btn" @click.prevent="addDrum">Add Sample</button>
-    <drum-sample v-if="nodes" v-for="(node, index) in nodes" :key="index"></drum-sample>
+    <drum-sample v-if="nodes" v-for="(node, key, index) in nodes" :array="key" :node="node" :index="index" :key="key"></drum-sample>
 
     </div>
     <drum-controls></drum-controls>
@@ -33,15 +33,7 @@
     },
     methods: {
       addDrum () {
-        if (this.nodes.length > 0) {
-          this.$store.commit('drums/addNode', {
-            id: this.nodes.length
-          })
-        } else {
-          this.$store.commit('drums/addNode', {
-            id: 0
-          })
-        }
+        this.$store.commit('drums/addNode')
       }
     }
   }
