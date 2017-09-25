@@ -36,3 +36,6 @@ For detailed explanation on how things work, checkout the [Nuxt.js docs](https:/
 - Create empty drum machine page
 - Create empty synth page
 - Create knob component based off agektmr/webaudio-knob
+- Add Bootstrap framework
+- Attempted to add Webpack Dashboard
+- Build Toolbar component
